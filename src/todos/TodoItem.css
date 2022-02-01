@@ -1,0 +1,45 @@
+.todo-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid #484848;
+}
+
+.todo-element.completed {
+    opacity: .5;
+}
+
+.todo-element .btn {
+    font-size: 2rem;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.todo-title {
+    text-transform: capitalize;
+}
+
+.todo-user {
+    width: 40px;
+    height: 40px;
+    background: violet;
+    color: #222;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.todo-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -20,3 +20,20 @@ body {
 .a {
   color: var(--app-link-color);
 }
+
+.btn {
+  background: none;
+  color: var(--app-text-color);
+  border: 0 solid;
+  appearance: none;
+  padding: 0.5rem;
+  line-height: 1;
+  font-size: 1rem;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--app-link-color);
+}

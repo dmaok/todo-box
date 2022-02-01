@@ -1,5 +1,5 @@
 import {Route, Routes } from "react-router-dom"
-import {TodoList} from "./todos/Todo-list";
+import {TodoList} from "./todos/TodoList";
 import {CreateTodo} from "./todos/CreateTodo";
 
 export const AppRouter = () => {
