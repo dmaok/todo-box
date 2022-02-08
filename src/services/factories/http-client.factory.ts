@@ -3,12 +3,12 @@ export class HttpClientFactory {
 
   constructor(private apiOrigin = '') {}
 
-  async get<T>(path: string, override?: Partial<RequestInit>): Promise<T|Array<T>> {
+  async get<T>(path: string, override?: Partial<RequestInit>): Promise<T> {
     return fetch(this.apiOrigin + path, {
       method: 'GET',
       ...override
     })
-      .then(r => this.handleResponse<T>(r))
+      .then(r => this.handleResponse(r))
       .catch(error => this.catchError(error));
   }
 
@@ -41,7 +41,7 @@ export class HttpClientFactory {
       .catch(error => this.catchError(error));
   }
 
-  private handleResponse<T>(response: Response) {
+  private handleResponse(response: Response) {
     if (response.status < 400) {
       return response.json();
     } else {

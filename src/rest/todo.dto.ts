@@ -1,7 +1,7 @@
 export class TodoDto {
   id!: number;
   title!: string;
-  userId: number | undefined;
+  userId!: number;
   completed: boolean | undefined;
 
   constructor(data?: TodoDto) {
